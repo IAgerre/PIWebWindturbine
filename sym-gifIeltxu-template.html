@@ -1,0 +1,23 @@
+<style>
+.good {
+    color: 'green';
+}
+
+.bad {
+    color: 'red';
+}
+
+</style>
+
+<div ng-style="{'background-color': config.BackgroundColor, 'border-radius': config.BorderRadius + 'px', 'border':'solid ' + config.Border + 'px ' + config.BorderColor}">
+	<div>
+		<img src="http://www.g-energy.it/wp-content/uploads/2016/05/eolic.gif" height="75%" width="75%">
+	</div>
+	<div> 
+		
+			<h4 ng-style="{'color': config.FontColor }"> {{ Windturbine }} </h4>
+			<h5 ng-style="{'color': config.FontColor }"> {{ Element }} </h5>
+			<h3 ng-style="{'color': config.FontColor }"> {{ Value }}{{ Units }} </h3>
+			<br>
+	</div>
+</div>
